@@ -1,0 +1,22 @@
+{
+  "name": "PlayMate — Offline Gaming Companion",
+  "short_name": "PlayMate",
+  "start_url": "/playmate-privacy-policy/",
+  "display": "standalone",
+  "background_color": "#0D0D0F",
+  "theme_color": "#0D0D0F",
+  "description": "An offline gaming companion with practical tools for game nights, matches, tournaments, board games, sports, and casual play.",
+  "icons": [
+    {
+      "src": "assets/logo/playmate-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/logo/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

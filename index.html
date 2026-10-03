@@ -1,1061 +1,864 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta
     name="description"
-    content="PlayMate Privacy Policy — Learn how PlayMate handles information, analytics, security, data retention, and user privacy."
-  />
-
-  <meta
-    name="robots"
-    content="index, follow"
-  />
-
-  <meta
-    name="author"
-    content="Sundram Gupta"
-  />
-
-  <meta
-    name="theme-color"
-    content="#0D0D0F"
-  />
-
-  <link
-    rel="canonical"
-    href="https://sundramdotdev.github.io/playmate-privacy-policy/"
-  />
-
-  <title>Privacy Policy — PlayMate</title>
-
-  <style>
-    :root {
-      --bg: #0d0d0f;
-      --surface: #141417;
-      --surface-2: #19191d;
-      --border: #29292e;
-
-      --text: #f5f5f2;
-      --text-secondary: #b7b7b2;
-      --text-muted: #85857f;
-
-      --accent: #d4a373;
-      --accent-hover: #e2b889;
-
-      --danger: #d97777;
-
-      --max-width: 900px;
-      --radius: 14px;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-      background: var(--bg);
-    }
-
-    body {
-      margin: 0;
-      background:
-        radial-gradient(
-          circle at top,
-          rgba(212, 163, 115, 0.055),
-          transparent 32rem
-        ),
-        var(--bg);
-
-      color: var(--text);
-
-      font-family:
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Roboto,
-        Helvetica,
-        Arial,
-        sans-serif;
-
-      font-size: 16px;
-      line-height: 1.75;
-
-      -webkit-font-smoothing: antialiased;
-      text-rendering: optimizeLegibility;
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    a:hover {
-      color: var(--accent-hover);
-      text-decoration: underline;
-      text-underline-offset: 3px;
-    }
-
-    ::selection {
-      background: rgba(212, 163, 115, 0.25);
-      color: var(--text);
-    }
-
-    .page {
-      width: min(
-        calc(100% - 32px),
-        var(--max-width)
-      );
-
-      margin: 0 auto;
-      padding: 64px 0 80px;
-    }
-
-    .header {
-      padding-bottom: 48px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .brand {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-
-      margin-bottom: 28px;
-
-      color: var(--text);
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-    }
-
-    .brand-mark {
-      display: grid;
-      place-items: center;
-
-      width: 34px;
-      height: 34px;
-
-      border: 1px solid var(--border);
-      border-radius: 9px;
-
-      background: var(--surface);
-
-      color: var(--accent);
-      font-size: 13px;
-      font-weight: 800;
-    }
-
-    h1,
-    h2,
-    h3 {
-      margin-top: 0;
-      color: var(--text);
-      line-height: 1.25;
-    }
-
-    h1 {
-      max-width: 760px;
-
-      margin-bottom: 18px;
-
-      font-size: clamp(34px, 6vw, 54px);
-      font-weight: 750;
-      letter-spacing: -0.035em;
-    }
-
-    .subtitle {
-      max-width: 720px;
-
-      margin: 0;
-
-      color: var(--text-secondary);
-
-      font-size: 17px;
-      line-height: 1.7;
-    }
-
-    .meta {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px 20px;
-
-      margin-top: 28px;
-
-      color: var(--text-muted);
-      font-size: 14px;
-    }
-
-    .meta span {
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-    }
-
-    .meta-dot {
-      width: 4px;
-      height: 4px;
-
-      border-radius: 50%;
-      background: var(--accent);
-    }
-
-    .content {
-      padding-top: 48px;
-    }
-
-    .toc {
-      margin-bottom: 48px;
-      padding: 24px;
-
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-
-      background: rgba(20, 20, 23, 0.75);
-    }
-
-    .toc-title {
-      margin-bottom: 14px;
-
-      color: var(--text);
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-    }
-
-    .toc ol {
-      margin: 0;
-      padding-left: 20px;
-    }
-
-    .toc li {
-      margin: 5px 0;
-    }
-
-    .toc a {
-      color: var(--text-secondary);
-    }
-
-    .toc a:hover {
-      color: var(--accent);
-    }
-
-    section {
-      margin-bottom: 52px;
-      scroll-margin-top: 30px;
-    }
-
-    h2 {
-      margin-bottom: 18px;
-
-      font-size: 25px;
-      font-weight: 700;
-      letter-spacing: -0.02em;
-    }
-
-    h3 {
-      margin-top: 28px;
-      margin-bottom: 10px;
-
-      font-size: 18px;
-      font-weight: 650;
-    }
-
-    p {
-      margin: 0 0 16px;
-      color: var(--text-secondary);
-    }
-
-    ul,
-    ol {
-      margin: 12px 0 20px;
-      padding-left: 24px;
-
-      color: var(--text-secondary);
-    }
-
-    li {
-      margin: 8px 0;
-      padding-left: 4px;
-    }
-
-    strong {
-      color: var(--text);
-      font-weight: 650;
-    }
-
-    .notice {
-      margin: 28px 0;
-      padding: 20px 22px;
-
-      border-left: 3px solid var(--accent);
-      border-top: 1px solid var(--border);
-      border-right: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-      border-radius: 0 var(--radius) var(--radius) 0;
-
-      background: var(--surface);
-    }
-
-    .notice p:last-child {
-      margin-bottom: 0;
-    }
-
-    .data-table-wrapper {
-      width: 100%;
-      overflow-x: auto;
-
-      margin: 24px 0;
-
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-    }
-
-    table {
-      width: 100%;
-      min-width: 640px;
-
-      border-collapse: collapse;
-    }
-
-    th,
-    td {
-      padding: 15px 16px;
-
-      border-bottom: 1px solid var(--border);
-
-      text-align: left;
-      vertical-align: top;
-    }
-
-    th {
-      background: var(--surface-2);
-
-      color: var(--text);
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-    }
-
-    td {
-      color: var(--text-secondary);
-      font-size: 14px;
-    }
-
-    tr:last-child td {
-      border-bottom: 0;
-    }
-
-    .contact-card {
-      margin-top: 24px;
-      padding: 24px;
-
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-
-      background: var(--surface);
-    }
-
-    .contact-card p {
-      margin-bottom: 8px;
-    }
-
-    .contact-card p:last-child {
-      margin-bottom: 0;
-    }
-
-    .footer {
-      padding-top: 32px;
-
-      border-top: 1px solid var(--border);
-
-      color: var(--text-muted);
-      font-size: 13px;
-      text-align: center;
-    }
-
-    .footer p {
-      margin-bottom: 8px;
-      color: inherit;
-    }
-
-    .footer-links {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 8px 18px;
-
-      margin-top: 12px;
-    }
-
-    @media (max-width: 640px) {
-      .page {
-        width: min(
-          calc(100% - 24px),
-          var(--max-width)
-        );
-
-        padding-top: 40px;
-        padding-bottom: 56px;
+    content="PlayMate is an offline gaming companion with dice, coin toss, team generator, score tracker, cricket scorer, timers, tournaments and more."
+  >
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Sundram Gupta">
+  <meta name="theme-color" content="#0D0D0F">
+
+  <link rel="canonical" href="https://sundramdotdev.github.io/playmate-privacy-policy/">
+
+  <title>PlayMate — Offline Gaming Companion</title>
+
+  <!-- Favicon & Icons -->
+  <link rel="icon" type="image/png" href="assets/logo/favicon.png">
+  <link rel="apple-touch-icon" href="assets/logo/favicon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sundramdotdev.github.io/playmate-privacy-policy/">
+  <meta property="og:title" content="PlayMate — Offline Gaming Companion">
+  <meta property="og:description" content="One app. Essential game tools. PlayMate brings dice, scores, teams, timers, cricket scoring, and tournaments into one offline companion.">
+  <meta property="og:image" content="https://sundramdotdev.github.io/playmate-privacy-policy/assets/og/playmate-og.png">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://sundramdotdev.github.io/playmate-privacy-policy/">
+  <meta name="twitter:title" content="PlayMate — Offline Gaming Companion">
+  <meta name="twitter:description" content="One app. Essential game tools. PlayMate brings dice, scores, teams, timers, cricket scoring, and tournaments into one offline companion.">
+  <meta name="twitter:image" content="https://sundramdotdev.github.io/playmate-privacy-policy/assets/og/playmate-og.png">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "PlayMate",
+        "applicationCategory": "GameApplication",
+        "operatingSystem": "Android, iOS",
+        "description": "An offline gaming companion with practical tools for game nights, matches, tournaments, board games, sports, and casual play.",
+        "offers": {
+          "@type": "Offer",
+          "price": "0"
+        },
+        "author": {
+          "@type": "Person",
+          "name": "Sundram Gupta",
+          "alternateName": "Sundramdotdev",
+          "url": "https://github.com/sundramdotdev"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "name": "PlayMate Official Website",
+        "url": "https://sundramdotdev.github.io/playmate-privacy-policy/",
+        "description": "Official product website and privacy policy for PlayMate."
       }
+    ]
+  }
+  </script>
 
-      .header {
-        padding-bottom: 36px;
-      }
-
-      .content {
-        padding-top: 36px;
-      }
-
-      .toc {
-        padding: 20px;
-      }
-
-      section {
-        margin-bottom: 40px;
-      }
-
-      h2 {
-        font-size: 22px;
-      }
-
-      .subtitle {
-        font-size: 16px;
-      }
-
-      .meta {
-        flex-direction: column;
-        gap: 7px;
-      }
-
-      .notice,
-      .contact-card {
-        padding: 18px;
-      }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      html {
-        scroll-behavior: auto;
-      }
-    }
-
-    @media print {
-      :root {
-        --bg: #ffffff;
-        --surface: #ffffff;
-        --surface-2: #f5f5f5;
-        --border: #dddddd;
-        --text: #111111;
-        --text-secondary: #333333;
-        --text-muted: #666666;
-        --accent: #8a5d2d;
-      }
-
-      body {
-        background: #ffffff;
-        color: #111111;
-      }
-
-      .page {
-        width: 100%;
-        padding: 20px;
-      }
-
-      a {
-        color: inherit;
-        text-decoration: underline;
-      }
-
-      .toc {
-        break-inside: avoid;
-      }
-
-      section {
-        break-inside: avoid;
-      }
-    }
-  </style>
+  <!-- Production Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
-  <main class="page">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <header class="header">
-      <div class="brand">
-        <span class="brand-mark">PM</span>
+  <!-- SECTION 1 — NAVIGATION -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="./" class="brand" aria-label="PlayMate home">
+        <!-- Official PlayMate App Logo (512x512 px) -->
+        <img
+          src="assets/logo/playmate-logo.png"
+          alt="PlayMate logo"
+          class="brand-icon"
+          width="34"
+          height="34"
+        >
         <span>PlayMate</span>
-      </div>
-
-      <h1>Privacy Policy</h1>
-
-      <p class="subtitle">
-        This Privacy Policy explains how PlayMate handles information
-        when you use the PlayMate mobile application and related services.
-      </p>
-
-      <div class="meta">
-        <span>
-          <span class="meta-dot"></span>
-          Effective date: October 3, 2026
-        </span>
-
-        <span>
-          <span class="meta-dot"></span>
-          Last updated: October 3, 2026
-        </span>
-      </div>
-    </header>
-
-    <div class="content">
-
-      <nav class="toc" aria-label="Table of contents">
-        <div class="toc-title">Contents</div>
-
-        <ol>
-          <li><a href="#introduction">Introduction</a></li>
-          <li><a href="#information">Information We Handle</a></li>
-          <li><a href="#local-data">Data Stored on Your Device</a></li>
-          <li><a href="#analytics">Analytics and Diagnostics</a></li>
-          <li><a href="#firebase">Firebase and Third-Party Services</a></li>
-          <li><a href="#permissions">Device Permissions</a></li>
-          <li><a href="#use">How Information Is Used</a></li>
-          <li><a href="#sharing">Data Sharing</a></li>
-          <li><a href="#retention">Data Retention and Deletion</a></li>
-          <li><a href="#security">Security</a></li>
-          <li><a href="#children">Children's Privacy</a></li>
-          <li><a href="#third-party">Third-Party Links and Services</a></li>
-          <li><a href="#changes">Changes to This Policy</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ol>
-      </nav>
-
-      <section id="introduction">
-        <h2>1. Introduction</h2>
-
-        <p>
-          PlayMate is an offline gaming companion application developed
-          by <strong>Sundram Gupta</strong> under the developer identity
-          <strong>Sundramdotdev</strong>.
-        </p>
-
-        <p>
-          PlayMate provides gaming utilities such as dice rolling,
-          coin tossing, team generation, score tracking, cricket
-          scoring, spin wheels, tournament tools, timers, match
-          history, statistics, and other related utilities.
-        </p>
-
-        <p>
-          We respect your privacy and aim to collect and use only the
-          information reasonably necessary to operate, maintain,
-          secure, and improve the application.
-        </p>
-
-        <div class="notice">
-          <p>
-            <strong>Privacy by design:</strong>
-            Many PlayMate features are designed to work locally on your
-            device. Information that remains entirely on your device is
-            not transmitted to us merely because you use the feature.
-          </p>
-        </div>
-      </section>
-
-      <section id="information">
-        <h2>2. Information We Handle</h2>
-
-        <p>
-          Depending on the version of PlayMate you use and the features
-          enabled in that version, the application may handle the
-          following categories of information.
-        </p>
-
-        <div class="data-table-wrapper">
-          <table>
-            <thead>
-              <tr>
-                <th>Category</th>
-                <th>Examples</th>
-                <th>Purpose</th>
-              </tr>
-            </thead>
-
-            <tbody>
-              <tr>
-                <td>App usage information</td>
-                <td>
-                  Feature interactions, app version, device or
-                  installation information
-                </td>
-                <td>
-                  App operation, analytics, diagnostics, and
-                  improvement
-                </td>
-              </tr>
-
-              <tr>
-                <td>Diagnostics</td>
-                <td>
-                  Crash information and technical diagnostic data
-                </td>
-                <td>
-                  Identifying crashes, bugs, and reliability issues
-                </td>
-              </tr>
-
-              <tr>
-                <td>Locally created game data</td>
-                <td>
-                  Scores, player names, match history, statistics,
-                  settings, and other information entered into
-                  PlayMate
-                </td>
-                <td>
-                  Providing the requested gaming functionality
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <p>
-          The exact information handled may change as PlayMate evolves.
-          This policy will be updated when material changes are made to
-          the application's data practices.
-        </p>
-      </section>
-
-      <section id="local-data">
-        <h2>3. Data Stored on Your Device</h2>
-
-        <p>
-          PlayMate is designed with offline functionality in mind.
-          Information created while using local features may be stored
-          directly on your device.
-        </p>
-
-        <p>
-          Examples may include:
-        </p>
-
-        <ul>
-          <li>Game scores and match results.</li>
-          <li>Player names entered by you.</li>
-          <li>Match history.</li>
-          <li>Player statistics.</li>
-          <li>Application preferences and settings.</li>
-          <li>Other locally generated game information.</li>
-        </ul>
-
-        <p>
-          Locally stored information is controlled by the application
-          and remains on your device unless a feature explicitly
-          transmits it to an external service.
-        </p>
-
-        <p>
-          Removing the application may remove locally stored
-          application data, depending on your device's operating system
-          and backup settings.
-        </p>
-      </section>
-
-      <section id="analytics">
-        <h2>4. Analytics and Diagnostics</h2>
-
-        <p>
-          Where analytics or crash-reporting services are enabled in
-          your version of PlayMate, these services may receive technical
-          and usage information to help us understand application
-          performance and improve reliability.
-        </p>
-
-        <p>
-          This information may include items such as:
-        </p>
-
-        <ul>
-          <li>Application version and build information.</li>
-          <li>Operating system and device information.</li>
-          <li>Crash reports and diagnostic information.</li>
-          <li>General feature or interaction information.</li>
-          <li>Technical information required to identify application errors.</li>
-        </ul>
-
-        <p>
-          Analytics and diagnostic information is used for purposes such
-          as understanding feature usage, identifying bugs, improving
-          stability, monitoring performance, and maintaining the
-          application.
-        </p>
-
-        <div class="notice">
-          <p>
-            <strong>Important:</strong>
-            The specific analytics and diagnostics configuration can
-            change between releases. The disclosures in this policy
-            should always be reviewed together with the current
-            PlayMate release and its Google Play Data Safety
-            declaration.
-          </p>
-        </div>
-      </section>
-
-      <section id="firebase">
-        <h2>5. Firebase and Third-Party Services</h2>
-
-        <p>
-          PlayMate may use services provided by Google Firebase or other
-          third-party service providers for application infrastructure,
-          analytics, crash diagnostics, configuration, authentication,
-          or other functionality when those services are enabled.
-        </p>
-
-        <p>
-          Depending on the features enabled in a particular release,
-          relevant Firebase services may include:
-        </p>
-
-        <ul>
-          <li>Firebase Analytics.</li>
-          <li>Firebase Crashlytics.</li>
-          <li>Firebase Remote Config.</li>
-          <li>Firebase Authentication.</li>
-          <li>Firebase Cloud Firestore.</li>
-          <li>Firebase Cloud Messaging.</li>
-        </ul>
-
-        <p>
-          Not every service listed above is necessarily active in every
-          version of PlayMate. Services are only used when required by
-          the functionality implemented in the relevant release.
-        </p>
-
-        <p>
-          Third-party providers process information according to their
-          own privacy policies and terms. You can review Google's
-          privacy practices through the official
-          <a
-            href="https://policies.google.com/privacy"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Google Privacy Policy
-          </a>.
-        </p>
-      </section>
-
-      <section id="permissions">
-        <h2>6. Device Permissions</h2>
-
-        <p>
-          PlayMate is designed to request only permissions that are
-          necessary for implemented functionality.
-        </p>
-
-        <p>
-          Depending on the features included in a particular release,
-          the application may use standard Android or iOS capabilities
-          such as network access, notifications, or vibration/haptic
-          feedback.
-        </p>
-
-        <p>
-          PlayMate does not intentionally request access to contacts,
-          microphone, camera, precise location, or other sensitive
-          device information unless a future feature specifically
-          requires it and the appropriate disclosure and permission
-          process is implemented.
-        </p>
-      </section>
-
-      <section id="use">
-        <h2>7. How Information Is Used</h2>
-
-        <p>
-          Information handled by PlayMate may be used for the following
-          purposes:
-        </p>
-
-        <ul>
-          <li>To provide and operate PlayMate's features.</li>
-          <li>To save your locally created gaming information.</li>
-          <li>To maintain application functionality.</li>
-          <li>To diagnose crashes and technical problems.</li>
-          <li>To understand general application usage.</li>
-          <li>To improve application performance and reliability.</li>
-          <li>To protect the application against abuse or misuse.</li>
-          <li>To comply with applicable legal obligations.</li>
-        </ul>
-
-        <p>
-          We do not use personal information for purposes unrelated to
-          the operation or improvement of PlayMate unless the purpose is
-          disclosed to you or required by applicable law.
-        </p>
-      </section>
-
-      <section id="sharing">
-        <h2>8. Data Sharing</h2>
-
-        <p>
-          We do not sell your personal information.
-        </p>
-
-        <p>
-          Information may be processed by third-party service providers
-          when those providers are required to operate specific PlayMate
-          functionality, provide analytics or diagnostics, deliver
-          infrastructure services, or comply with legal requirements.
-        </p>
-
-        <p>
-          We may also disclose information where reasonably necessary
-          to:
-        </p>
-
-        <ul>
-          <li>Comply with applicable law or legal process.</li>
-          <li>Protect the rights, safety, and security of users.</li>
-          <li>Detect, prevent, or investigate abuse or security issues.</li>
-          <li>Protect the security and integrity of PlayMate.</li>
-        </ul>
-
-        <p>
-          Information that remains solely on your device is not shared
-          with us unless you explicitly use a feature that transmits
-          that information.
-        </p>
-      </section>
-
-      <section id="retention">
-        <h2>9. Data Retention and Deletion</h2>
-
-        <h3>Local information</h3>
-
-        <p>
-          Information stored locally by PlayMate generally remains on
-          your device until you delete it through the application,
-          clear the application's data, or uninstall the application,
-          subject to your device's operating system and backup behavior.
-        </p>
-
-        <h3>Service-related information</h3>
-
-        <p>
-          Information processed by third-party services may be retained
-          according to the applicable service provider's retention
-          practices and our legitimate operational requirements.
-        </p>
-
-        <h3>Deletion requests</h3>
-
-        <p>
-          If a future PlayMate feature provides an account or server-side
-          data storage, PlayMate will provide an appropriate mechanism
-          for users to request deletion of eligible account-associated
-          information.
-        </p>
-
-        <p>
-          For privacy-related deletion questions, you may contact the
-          developer using the contact information provided below.
-        </p>
-      </section>
-
-      <section id="security">
-        <h2>10. Security</h2>
-
-        <p>
-          We take reasonable measures intended to protect information
-          handled by PlayMate against unauthorized access, alteration,
-          disclosure, or destruction.
-        </p>
-
-        <p>
-          Security measures may include limiting data collection,
-          keeping dependencies and services updated, using secure
-          communication channels where applicable, and restricting
-          access to information to legitimate operational purposes.
-        </p>
-
-        <p>
-          However, no method of electronic storage or transmission can
-          be guaranteed to be completely secure. We therefore cannot
-          guarantee absolute security.
-        </p>
-      </section>
-
-      <section id="children">
-        <h2>11. Children's Privacy</h2>
-
-        <p>
-          PlayMate is a general-purpose gaming utility application and
-          is not specifically directed toward children under the age
-          required by applicable law.
-        </p>
-
-        <p>
-          We do not knowingly collect personal information from children
-          in violation of applicable privacy laws.
-        </p>
-
-        <p>
-          If you believe that a child has provided personal information
-          through PlayMate in a manner that requires deletion, please
-          contact us so that the matter can be reviewed.
-        </p>
-      </section>
-
-      <section id="third-party">
-        <h2>12. Third-Party Links and Services</h2>
-
-        <p>
-          PlayMate may contain links to third-party websites or services,
-          for example developer pages, documentation, or external
-          resources.
-        </p>
-
-        <p>
-          Once you leave PlayMate and access a third-party service, that
-          service's own privacy policy and terms apply. We are not
-          responsible for the privacy practices or content of
-          third-party websites and services.
-        </p>
-      </section>
-
-      <section id="changes">
-        <h2>13. Changes to This Privacy Policy</h2>
-
-        <p>
-          We may update this Privacy Policy from time to time to reflect
-          changes to PlayMate, its features, applicable laws, or the
-          services used by the application.
-        </p>
-
-        <p>
-          When changes are made, the "Last updated" date at the top of
-          this page will be updated.
-        </p>
-
-        <p>
-          Continued use of PlayMate after an updated Privacy Policy
-          becomes available means that you acknowledge the updated
-          policy, to the extent permitted by applicable law.
-        </p>
-      </section>
-
-      <section id="contact">
-        <h2>14. Contact</h2>
-
-        <p>
-          If you have questions, concerns, or requests regarding this
-          Privacy Policy or PlayMate's privacy practices, please contact
-          the developer.
-        </p>
-
-        <div class="contact-card">
-          <p>
-            <strong>Developer:</strong>
-            Sundram Gupta
-          </p>
-
-          <p>
-            <strong>Developer identity:</strong>
-            Sundramdotdev
-          </p>
-
-          <p>
-            <strong>GitHub:</strong>
+      </a>
+
+      <!-- Accessible Mobile Menu Button -->
+      <button
+        class="mobile-menu-btn"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+      >
+        <svg fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+
+      <!-- Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#offline" class="nav-link">Offline-First</a></li>
+          <li><a href="#use-cases" class="nav-link">Game Nights</a></li>
+          <li><a href="#philosophy" class="nav-link">About</a></li>
+          <li><a href="privacy-policy/" class="nav-link">Privacy</a></li>
+          <li>
             <a
               href="https://github.com/sundramdotdev"
+              class="nav-link"
               target="_blank"
               rel="noopener noreferrer"
             >
-              github.com/sundramdotdev
+              GitHub
             </a>
+          </li>
+          <li>
+            <a href="privacy-policy/" class="nav-cta">
+              <span>Privacy Policy</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- SECTION 2 — HERO SECTION -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="eyebrow">
+            <span class="eyebrow-dot" aria-hidden="true"></span>
+            <span>Offline Gaming Companion</span>
+          </div>
+
+          <h1 id="hero-title" class="hero-title">
+            Everything you need to keep the game going.
+          </h1>
+
+          <p class="hero-desc">
+            PlayMate brings dice, scores, teams, timers, cricket scoring, tournaments and more into one simple gaming companion.
           </p>
 
-          <p>
-            <strong>LinkedIn:</strong>
-            <a
-              href="https://linkedin.com/in/sundramdotdev"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              linkedin.com/in/sundramdotdev
+          <div class="hero-actions">
+            <a href="#features" class="btn btn-primary">
+              Explore PlayMate
             </a>
-          </p>
+            <a href="privacy-policy/" class="btn btn-secondary">
+              Privacy Policy
+            </a>
+          </div>
 
-          <p>
-            <strong>Instagram:</strong>
-            <a
-              href="https://www.instagram.com/devsundram_/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              @devsundram_
-            </a>
+          <div class="hero-meta">
+            <div class="hero-meta-item">
+              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <span>Offline-first utilities</span>
+            </div>
+            <div class="hero-meta-item">
+              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <span>No mandatory account</span>
+            </div>
+            <div class="hero-meta-item">
+              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              <span>Instant startup</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- HERO RIGHT — PRODUCT VISUAL -->
+        <div class="hero-visual">
+          <div class="product-card">
+            <div class="logo-container">
+              <!-- Official PlayMate App Logo (512x512 px) -->
+              <img
+                src="assets/logo/playmate-logo.png"
+                alt="PlayMate application emblem"
+                class="product-logo"
+                width="512"
+                height="512"
+              >
+            </div>
+            <h2 class="product-name">PlayMate</h2>
+            <p class="product-tagline">Your offline gaming companion.</p>
+            <div class="product-pills">
+              <span class="product-pill">Dice</span>
+              <span class="product-pill">Scores</span>
+              <span class="product-pill">Cricket</span>
+              <span class="product-pill">Teams</span>
+              <span class="product-pill">Timers</span>
+              <span class="product-pill">Tournaments</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3 — TRUST / PRODUCT STATEMENT -->
+    <section class="trust-banner" aria-label="Product positioning">
+      <div class="container trust-content">
+        <div class="trust-eyebrow">ONE APP. MANY GAME TOOLS.</div>
+        <h2 class="trust-headline">BUILT FOR REAL GAME NIGHTS.</h2>
+        <p class="trust-desc">
+          PlayMate strips away clutter and online accounts to deliver fast, reliable utilities for your table, pitch, and living room.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 4 — FEATURES SECTION -->
+    <section id="features" class="section" aria-labelledby="features-title">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-tag">Essential Utilities</span>
+          <h2 id="features-title" class="section-title">Game tools, all in one place.</h2>
+          <p class="section-subtitle">
+            Practical tools designed for friends, families, sports teams, and casual matches.
           </p>
         </div>
 
-        <p style="margin-top: 20px;">
-          For privacy-related requests, please clearly mention
-          <strong>PlayMate Privacy</strong> in your message.
-        </p>
-      </section>
+        <div class="features-grid">
+          <!-- 1. Dice Roller -->
+          <article class="feature-card">
+            <div class="feature-top">
+              <div class="feature-icon-wrap" aria-hidden="true">
+                <svg fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+                  <rect x="4" y="4" width="16" height="16" rx="3" stroke="currentColor"></rect>
+                  <circle cx="8.5" cy="8.5" r="1.2" fill="currentColor"></circle>
+                  <circle cx="15.5" cy="8.5" r="1.2" fill="currentColor"></circle>
+                  <circle cx="8.5" cy="15.5" r="1.2" fill="currentColor"></circle>
+                  <circle cx="15.5" cy="15.5" r="1.2" fill="currentColor"></circle>
+                  <circle cx="12" cy="12" r="1.2" fill="currentColor"></circle>
+                </svg>
+              </div>
+              <span class="badge badge-available">Available</span>
+            </div>
+            <h3 class="feature-name">Dice Roller</h3>
+            <p class="feature-desc">Roll virtual dice whenever you need them. Perfect for board games and spontaneous tabletop rounds.</p>
+          </article>
 
-    </div>
+          <!-- 2. Coin Toss -->
+          <article class="feature-card">
+            <div class="feature-top">
+              <div class="feature-icon-wrap" aria-hidden="true">
+                <svg fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+                  <circle cx="12" cy="12" r="8" stroke="currentColor"></circle>
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v8m-3-4h6"></path>
+                </svg>
+              </div>
+              <span class="badge badge-available">Available</span>
+            </div>
+            <h3 class="feature-name">Coin Toss</h3>
+            <p class="feature-desc">Make quick random decisions with a virtual coin toss to start a game or decide who goes first.</p>
+          </article>
 
-    <footer class="footer">
-      <p>
-        © 2026 Sundram Gupta. All rights reserved.
-      </p>
+          <!-- 3. Team Generator -->
+          <article class="feature-card">
+            <div class="feature-top">
+              <div class="feature-icon-wrap" aria-hidden="true">
+                <svg fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                </svg>
+              </div>
+              <span class="badge badge-available">Available</span>
+            </div>
+            <h3 class="feature-name">Team Generator</h3>
+            <p class="feature-desc">Create balanced, random teams for friends, sports matches, and group games without disputes.</p>
+          </article>
 
-      <p>
-        PlayMate — Offline Gaming Companion
-      </p>
+          <!-- 4. Score Tracker -->
+          <article class="feature-card">
+            <div class="feature-top">
+              <div class="feature-icon-wrap" aria-hidden="true">
+                <svg fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                </svg>
+              </div>
+              <span class="badge badge-available">Available</span>
+            </div>
+            <h3 class="feature-name">Score Tracker</h3>
+            <p class="feature-desc">Keep scores without pen and paper. Fast point counting for card games, board games, and competitions.</p>
+          </article>
 
-      <div class="footer-links">
-        <a
-          href="https://github.com/sundramdotdev"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GitHub
-        </a>
+          <!-- 5. Cricket Scorer -->
+          <article class="feature-card">
+            <div class="feature-top">
+              <div class="feature-icon-wrap" aria-hidden="true">
+                <svg fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6-9.5 9.5a1 1 0 01-.7.3H4v-2.1a1 1 0 01.3-.7l9.5-9.5 1.6 1.6a1 1 0 001.4 0l1.9-1.9a1 1 0 000-1.4l-2.1-2.1a1 1 0 00-1.4 0l-1.9 1.9z"></path>
+                </svg>
+              </div>
+              <span class="badge badge-available">Available</span>
+            </div>
+            <h3 class="feature-name">Cricket Scorer</h3>
+            <p class="feature-desc">Track casual cricket and gully cricket matches with ball-by-ball updates, overs, wickets, and extras.</p>
+          </article>
 
-        <a
-          href="https://linkedin.com/in/sundramdotdev"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          LinkedIn
-        </a>
+          <!-- 6. Spin Wheel -->
+          <article class="feature-card">
+            <div class="feature-top">
+              <div class="feature-icon-wrap" aria-hidden="true">
+                <svg fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+                  <circle cx="12" cy="12" r="9" stroke="currentColor"></circle>
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18m-9-9h18m-2.6-6.4L5.6 18.4m0-12.8l12.8 12.8"></path>
+                </svg>
+              </div>
+              <span class="badge badge-available">Available</span>
+            </div>
+            <h3 class="feature-name">Spin Wheel</h3>
+            <p class="feature-desc">Randomly select players, teams, challenges, or party tasks with a customizable wheel spinner.</p>
+          </article>
 
-        <a
-          href="https://www.instagram.com/devsundram_/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Instagram
-        </a>
+          <!-- 7. Tournament Generator -->
+          <article class="feature-card">
+            <div class="feature-top">
+              <div class="feature-icon-wrap" aria-hidden="true">
+                <svg fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h4v4H4V6zm12 0h4v4h-4V6zM4 14h4v4H4v-4zm12 0h4v4h-4v-4zm-8-6h4m4 0h-4m0 0v8m0 0H8m4 0h4"></path>
+                </svg>
+              </div>
+              <span class="badge badge-available">Available</span>
+            </div>
+            <h3 class="feature-name">Tournament Generator</h3>
+            <p class="feature-desc">Organize competitions and tournaments with structured brackets, match schedules, and round progression.</p>
+          </article>
+
+          <!-- 8. Game Timer -->
+          <article class="feature-card">
+            <div class="feature-top">
+              <div class="feature-icon-wrap" aria-hidden="true">
+                <svg fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+                  <circle cx="12" cy="12" r="9" stroke="currentColor"></circle>
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 7v5l3 3m-3-11V2m-3 0h6"></path>
+                </svg>
+              </div>
+              <span class="badge badge-available">Available</span>
+            </div>
+            <h3 class="feature-name">Game Timer</h3>
+            <p class="feature-desc">Keep rounds, matches, challenges, and games on time with turn countdowns and stopwatch counters.</p>
+          </article>
+
+          <!-- 9. Match History -->
+          <article class="feature-card">
+            <div class="feature-top">
+              <div class="feature-icon-wrap" aria-hidden="true">
+                <svg fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <span class="badge badge-available">Available</span>
+            </div>
+            <h3 class="feature-name">Match History</h3>
+            <p class="feature-desc">Keep track of previous games and results saved locally on your device for future bragging rights.</p>
+          </article>
+
+          <!-- 10. Player Statistics -->
+          <article class="feature-card">
+            <div class="feature-top">
+              <div class="feature-icon-wrap" aria-hidden="true">
+                <svg fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                </svg>
+              </div>
+              <span class="badge badge-available">Available</span>
+            </div>
+            <h3 class="feature-name">Player Statistics</h3>
+            <p class="feature-desc">Track player performance, win rates, match counts, and scores where supported by the game tool.</p>
+          </article>
+
+          <!-- 11. Achievements -->
+          <article class="feature-card">
+            <div class="feature-top">
+              <div class="feature-icon-wrap" aria-hidden="true">
+                <svg fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                </svg>
+              </div>
+              <span class="badge badge-coming-soon">Coming soon</span>
+            </div>
+            <h3 class="feature-name">Achievements</h3>
+            <p class="feature-desc">Track progress, milestones, and match streaks across your gaming sessions as you play.</p>
+          </article>
+        </div>
       </div>
-    </footer>
+    </section>
 
+    <!-- SECTION 5 — OFFLINE-FIRST SECTION -->
+    <section id="offline" class="section offline-section" aria-labelledby="offline-title">
+      <div class="container offline-grid">
+        <div>
+          <span class="section-tag">Zero Connectivity Friction</span>
+          <h2 id="offline-title" class="section-title">Built to work when the Wi-Fi doesn't matter.</h2>
+          <p class="section-subtitle">
+            PlayMate is designed around offline-friendly gaming utilities, so you can use essential tools at home, outdoors, during travel, at the sports ground, or anywhere your game takes you.
+          </p>
+
+          <div class="offline-details" style="margin-top: 32px;">
+            <div class="pillar-item">
+              <div class="pillar-bullet" aria-hidden="true">
+                <svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <div class="pillar-text">
+                <h3>Local Device Execution</h3>
+                <p>Many core utilities are designed to work locally on your device without relying on continuous server calls.</p>
+              </div>
+            </div>
+
+            <div class="pillar-item">
+              <div class="pillar-bullet" aria-hidden="true">
+                <svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <div class="pillar-text">
+                <h3>Zero Forced Logins</h3>
+                <p>No mandatory accounts, email verifications, or passwords to start rolling dice or tracking a match.</p>
+              </div>
+            </div>
+
+            <div class="pillar-item">
+              <div class="pillar-bullet" aria-hidden="true">
+                <svg fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                </svg>
+              </div>
+              <div class="pillar-text">
+                <h3>Travel and Pitch Ready</h3>
+                <p>Works reliably in airplane mode, remote parks, basements, and sports grounds with zero latency.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="offline-callout-card">
+            <div class="callout-header">
+              <svg fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+              </svg>
+              <h3>Practical Engineering</h3>
+            </div>
+            <p class="callout-body">
+              Games happen in real life — around living room coffee tables, on local turf fields, in transit, and during power cuts. PlayMate does not burden you with loading spinners when all you need is a pair of dice or a coin flip.
+            </p>
+            <div class="callout-meta">
+              Many core utilities operate locally on your device.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6 — USE CASES -->
+    <section id="use-cases" class="section" aria-labelledby="use-cases-title">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-tag">Versatility</span>
+          <h2 id="use-cases-title" class="section-title">Made for game nights.</h2>
+          <p class="section-subtitle">
+            From casual living room board games to weekend matches on the pitch.
+          </p>
+        </div>
+
+        <div class="use-cases-grid">
+          <div class="use-case-card">
+            <div class="use-case-icon" aria-hidden="true">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"></rect><circle cx="12" cy="12" r="2"></circle></svg>
+            </div>
+            <div class="use-case-info">
+              <h3>Board games</h3>
+              <p>Monopoly, Settlers, and tabletop games</p>
+            </div>
+          </div>
+
+          <div class="use-case-card">
+            <div class="use-case-icon" aria-hidden="true">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l3 3"></path></svg>
+            </div>
+            <div class="use-case-info">
+              <h3>Ludo</h3>
+              <p>Instant virtual dice roll without losing pieces</p>
+            </div>
+          </div>
+
+          <div class="use-case-card">
+            <div class="use-case-icon" aria-hidden="true">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </div>
+            <div class="use-case-info">
+              <h3>Snake & Ladder</h3>
+              <p>Turn tracking and rapid multi-sided dice</p>
+            </div>
+          </div>
+
+          <div class="use-case-card">
+            <div class="use-case-icon" aria-hidden="true">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><path d="M8 12a4 4 0 008 0"></path></svg>
+            </div>
+            <div class="use-case-info">
+              <h3>Cricket</h3>
+              <p>Detailed overs, wickets, and run tracking</p>
+            </div>
+          </div>
+
+          <div class="use-case-card">
+            <div class="use-case-icon" aria-hidden="true">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            </div>
+            <div class="use-case-info">
+              <h3>Gully cricket</h3>
+              <p>Quick match setups with custom rules</p>
+            </div>
+          </div>
+
+          <div class="use-case-card">
+            <div class="use-case-icon" aria-hidden="true">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"></circle><path d="M12 3v18"></path></svg>
+            </div>
+            <div class="use-case-info">
+              <h3>Football</h3>
+              <p>Match clock, goals, and team splits</p>
+            </div>
+          </div>
+
+          <div class="use-case-card">
+            <div class="use-case-icon" aria-hidden="true">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M12 2l3 7h7l-5.5 4 2 7-6.5-4.5L5.5 20l2-7L2 9h7z"></path></svg>
+            </div>
+            <div class="use-case-info">
+              <h3>Badminton</h3>
+              <p>Set-by-set point keeping and service cues</p>
+            </div>
+          </div>
+
+          <div class="use-case-card">
+            <div class="use-case-icon" aria-hidden="true">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
+            </div>
+            <div class="use-case-info">
+              <h3>Family games</h3>
+              <p>Simple tools anyone at the table can use</p>
+            </div>
+          </div>
+
+          <div class="use-case-card">
+            <div class="use-case-icon" aria-hidden="true">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 00-8 0v2"></path><circle cx="12" cy="11" r="4"></circle></svg>
+            </div>
+            <div class="use-case-info">
+              <h3>Friends</h3>
+              <p>Fair coin flips and random turn pickers</p>
+            </div>
+          </div>
+
+          <div class="use-case-card">
+            <div class="use-case-icon" aria-hidden="true">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+            <div class="use-case-info">
+              <h3>Tournaments</h3>
+              <p>Round robin and elimination brackets</p>
+            </div>
+          </div>
+
+          <div class="use-case-card">
+            <div class="use-case-icon" aria-hidden="true">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M3 12h18M12 3v18"></path></svg>
+            </div>
+            <div class="use-case-info">
+              <h3>Outdoor games</h3>
+              <p>Works in fields and parks without Wi-Fi</p>
+            </div>
+          </div>
+
+          <div class="use-case-card">
+            <div class="use-case-icon" aria-hidden="true">
+              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"></path></svg>
+            </div>
+            <div class="use-case-info">
+              <h3>Tabletop games</h3>
+              <p>Card games, custom timers, and counters</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7 — PRODUCT PHILOSOPHY -->
+    <section id="philosophy" class="section" aria-labelledby="philosophy-title">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-tag">Philosophy</span>
+          <h2 id="philosophy-title" class="section-title">Simple by design.</h2>
+          <p class="section-subtitle">
+            Engineered around speed, practicality, and real gaming situations.
+          </p>
+        </div>
+
+        <div class="philosophy-grid">
+          <div class="philosophy-card">
+            <div class="philosophy-num">01</div>
+            <h3 class="philosophy-title">Fast</h3>
+            <p class="philosophy-desc">
+              Launches instantaneously. No splash screen delays, no heavy feeds, and zero waiting when it's your turn to roll.
+            </p>
+          </div>
+
+          <div class="philosophy-card">
+            <div class="philosophy-num">02</div>
+            <h3 class="philosophy-title">Practical</h3>
+            <p class="philosophy-desc">
+              Every tool exists to solve a real friction point during gameplay: misplaced dice, lost pens, or team disputes.
+            </p>
+          </div>
+
+          <div class="philosophy-card">
+            <div class="philosophy-num">03</div>
+            <h3 class="philosophy-title">Easy to understand</h3>
+            <p class="philosophy-desc">
+              Intuitive controls anyone can pick up immediately. Clean typography and high contrast for easy reading across the table.
+            </p>
+          </div>
+
+          <div class="philosophy-card">
+            <div class="philosophy-num">04</div>
+            <h3 class="philosophy-title">Minimal</h3>
+            <p class="philosophy-desc">
+              No bloated social feeds, unnecessary gamification, or distracting noise. Just the exact gaming utility you asked for.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8 — PRIVACY SECTION -->
+    <section id="privacy" class="section" aria-labelledby="privacy-title">
+      <div class="container">
+        <div class="privacy-spotlight">
+          <div class="privacy-spotlight-left">
+            <span class="section-tag">Transparency</span>
+            <h2 id="privacy-title">Your privacy matters.</h2>
+            <p>
+              We believe gaming utilities should do their job without quietly collecting unnecessary personal data. PlayMate is built with respect for your privacy from day one.
+            </p>
+
+            <ul class="privacy-points">
+              <li class="privacy-point">
+                <svg fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span>Many core utilities operate locally on your device.</span>
+              </li>
+              <li class="privacy-point">
+                <svg fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span>We do not sell your personal information.</span>
+              </li>
+              <li class="privacy-point">
+                <svg fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span>Analytics and crash diagnostics may be used where enabled to improve reliability.</span>
+              </li>
+              <li class="privacy-point">
+                <svg fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span>Comprehensive, transparent privacy policy publicly hosted.</span>
+              </li>
+            </ul>
+
+            <a href="privacy-policy/" class="btn btn-primary">
+              Read Privacy Policy
+            </a>
+          </div>
+
+          <div class="privacy-spotlight-right">
+            <h3 style="margin: 0; font-size: 17px; font-weight: 700; color: var(--text);">Public Disclosure</h3>
+            <p style="margin: 0; font-size: 14px; color: var(--text-secondary); line-height: 1.6;">
+              Review full details regarding data storage, analytics disclosures, permissions, third-party services, retention, and contact details.
+            </p>
+            <div class="privacy-badge-note">
+              Effective date: October 3, 2026<br>
+              Compliant with Google Play Store policy host requirements.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 9 — DEVELOPER & GITHUB SECTIONS -->
+    <section class="section" aria-label="Developer and Open Source">
+      <div class="container dev-github-grid">
+        <!-- Developer Profile -->
+        <article class="dev-card">
+          <div>
+            <span class="section-tag">Craftsmanship</span>
+            <h3>Built by Sundramdotdev</h3>
+            <p>
+              PlayMate is designed and developed by Sundram Gupta under the Sundramdotdev identity. Focused on building lean, reliable, offline-first mobile utilities.
+            </p>
+          </div>
+
+          <div class="social-links">
+            <a
+              href="https://github.com/sundramdotdev"
+              class="social-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Sundram Gupta on GitHub"
+            >
+              <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span>GitHub</span>
+            </a>
+
+            <a
+              href="https://linkedin.com/in/sundramdotdev"
+              class="social-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Sundram Gupta on LinkedIn"
+            >
+              <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+
+            <a
+              href="https://www.instagram.com/devsundram_?stkn=dXBva2IwMzZxbHY1"
+              class="social-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Sundram Gupta on Instagram"
+            >
+              <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              <span>Instagram</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- GitHub Project Section -->
+        <article class="github-card">
+          <div>
+            <span class="section-tag">Transparency</span>
+            <h3>Open source, transparent, and evolving.</h3>
+            <p>
+              Inspect the repository, track updates, check privacy policy revisions, or contribute feedback to help refine PlayMate.
+            </p>
+          </div>
+
+          <div>
+            <a
+              href="https://github.com/sundramdotdev/playmate-privacy-policy"
+              class="btn btn-secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View on GitHub
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
   </main>
+
+  <!-- SECTION 10 — FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="./" class="brand" aria-label="PlayMate home">
+            <img
+              src="assets/logo/playmate-logo.png"
+              alt="PlayMate logo"
+              class="brand-icon"
+              width="34"
+              height="34"
+            >
+            <span>PlayMate</span>
+          </a>
+          <p>
+            Your offline gaming companion with essential tools for matches, game nights, and tournaments.
+          </p>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Product</h4>
+          <ul class="footer-nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#offline">Offline-First</a></li>
+            <li><a href="#use-cases">Game Nights</a></li>
+            <li><a href="#philosophy">About</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Legal & Policy</h4>
+          <ul class="footer-nav-links">
+            <li><a href="privacy-policy/">Privacy Policy</a></li>
+            <li>
+              <a
+                href="https://policies.google.com/privacy"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Google Privacy
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4>Connect</h4>
+          <ul class="footer-nav-links">
+            <li>
+              <a
+                href="https://github.com/sundramdotdev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://linkedin.com/in/sundramdotdev"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/devsundram_?stkn=dXBva2IwMzZxbHY1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Instagram
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Sundram Gupta. All rights reserved.</div>
+        <div>PlayMate is developed by Sundramdotdev.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
-```
