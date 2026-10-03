@@ -1,0 +1,1061 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta
+    name="description"
+    content="PlayMate Privacy Policy — Learn how PlayMate handles information, analytics, security, data retention, and user privacy."
+  />
+
+  <meta
+    name="robots"
+    content="index, follow"
+  />
+
+  <meta
+    name="author"
+    content="Sundram Gupta"
+  />
+
+  <meta
+    name="theme-color"
+    content="#0D0D0F"
+  />
+
+  <link
+    rel="canonical"
+    href="https://sundramdotdev.github.io/playmate-privacy-policy/"
+  />
+
+  <title>Privacy Policy — PlayMate</title>
+
+  <style>
+    :root {
+      --bg: #0d0d0f;
+      --surface: #141417;
+      --surface-2: #19191d;
+      --border: #29292e;
+
+      --text: #f5f5f2;
+      --text-secondary: #b7b7b2;
+      --text-muted: #85857f;
+
+      --accent: #d4a373;
+      --accent-hover: #e2b889;
+
+      --danger: #d97777;
+
+      --max-width: 900px;
+      --radius: 14px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      background: var(--bg);
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(
+          circle at top,
+          rgba(212, 163, 115, 0.055),
+          transparent 32rem
+        ),
+        var(--bg);
+
+      color: var(--text);
+
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+
+      font-size: 16px;
+      line-height: 1.75;
+
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: var(--accent-hover);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    ::selection {
+      background: rgba(212, 163, 115, 0.25);
+      color: var(--text);
+    }
+
+    .page {
+      width: min(
+        calc(100% - 32px),
+        var(--max-width)
+      );
+
+      margin: 0 auto;
+      padding: 64px 0 80px;
+    }
+
+    .header {
+      padding-bottom: 48px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+
+      margin-bottom: 28px;
+
+      color: var(--text);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .brand-mark {
+      display: grid;
+      place-items: center;
+
+      width: 34px;
+      height: 34px;
+
+      border: 1px solid var(--border);
+      border-radius: 9px;
+
+      background: var(--surface);
+
+      color: var(--accent);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin-top: 0;
+      color: var(--text);
+      line-height: 1.25;
+    }
+
+    h1 {
+      max-width: 760px;
+
+      margin-bottom: 18px;
+
+      font-size: clamp(34px, 6vw, 54px);
+      font-weight: 750;
+      letter-spacing: -0.035em;
+    }
+
+    .subtitle {
+      max-width: 720px;
+
+      margin: 0;
+
+      color: var(--text-secondary);
+
+      font-size: 17px;
+      line-height: 1.7;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 20px;
+
+      margin-top: 28px;
+
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+
+    .meta span {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+    }
+
+    .meta-dot {
+      width: 4px;
+      height: 4px;
+
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    .content {
+      padding-top: 48px;
+    }
+
+    .toc {
+      margin-bottom: 48px;
+      padding: 24px;
+
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+
+      background: rgba(20, 20, 23, 0.75);
+    }
+
+    .toc-title {
+      margin-bottom: 14px;
+
+      color: var(--text);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .toc ol {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .toc li {
+      margin: 5px 0;
+    }
+
+    .toc a {
+      color: var(--text-secondary);
+    }
+
+    .toc a:hover {
+      color: var(--accent);
+    }
+
+    section {
+      margin-bottom: 52px;
+      scroll-margin-top: 30px;
+    }
+
+    h2 {
+      margin-bottom: 18px;
+
+      font-size: 25px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    h3 {
+      margin-top: 28px;
+      margin-bottom: 10px;
+
+      font-size: 18px;
+      font-weight: 650;
+    }
+
+    p {
+      margin: 0 0 16px;
+      color: var(--text-secondary);
+    }
+
+    ul,
+    ol {
+      margin: 12px 0 20px;
+      padding-left: 24px;
+
+      color: var(--text-secondary);
+    }
+
+    li {
+      margin: 8px 0;
+      padding-left: 4px;
+    }
+
+    strong {
+      color: var(--text);
+      font-weight: 650;
+    }
+
+    .notice {
+      margin: 28px 0;
+      padding: 20px 22px;
+
+      border-left: 3px solid var(--accent);
+      border-top: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      border-radius: 0 var(--radius) var(--radius) 0;
+
+      background: var(--surface);
+    }
+
+    .notice p:last-child {
+      margin-bottom: 0;
+    }
+
+    .data-table-wrapper {
+      width: 100%;
+      overflow-x: auto;
+
+      margin: 24px 0;
+
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+
+    table {
+      width: 100%;
+      min-width: 640px;
+
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 15px 16px;
+
+      border-bottom: 1px solid var(--border);
+
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--surface-2);
+
+      color: var(--text);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    td {
+      color: var(--text-secondary);
+      font-size: 14px;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .contact-card {
+      margin-top: 24px;
+      padding: 24px;
+
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+
+      background: var(--surface);
+    }
+
+    .contact-card p {
+      margin-bottom: 8px;
+    }
+
+    .contact-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .footer {
+      padding-top: 32px;
+
+      border-top: 1px solid var(--border);
+
+      color: var(--text-muted);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    .footer p {
+      margin-bottom: 8px;
+      color: inherit;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+
+      margin-top: 12px;
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        width: min(
+          calc(100% - 24px),
+          var(--max-width)
+        );
+
+        padding-top: 40px;
+        padding-bottom: 56px;
+      }
+
+      .header {
+        padding-bottom: 36px;
+      }
+
+      .content {
+        padding-top: 36px;
+      }
+
+      .toc {
+        padding: 20px;
+      }
+
+      section {
+        margin-bottom: 40px;
+      }
+
+      h2 {
+        font-size: 22px;
+      }
+
+      .subtitle {
+        font-size: 16px;
+      }
+
+      .meta {
+        flex-direction: column;
+        gap: 7px;
+      }
+
+      .notice,
+      .contact-card {
+        padding: 18px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+
+    @media print {
+      :root {
+        --bg: #ffffff;
+        --surface: #ffffff;
+        --surface-2: #f5f5f5;
+        --border: #dddddd;
+        --text: #111111;
+        --text-secondary: #333333;
+        --text-muted: #666666;
+        --accent: #8a5d2d;
+      }
+
+      body {
+        background: #ffffff;
+        color: #111111;
+      }
+
+      .page {
+        width: 100%;
+        padding: 20px;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: underline;
+      }
+
+      .toc {
+        break-inside: avoid;
+      }
+
+      section {
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="page">
+
+    <header class="header">
+      <div class="brand">
+        <span class="brand-mark">PM</span>
+        <span>PlayMate</span>
+      </div>
+
+      <h1>Privacy Policy</h1>
+
+      <p class="subtitle">
+        This Privacy Policy explains how PlayMate handles information
+        when you use the PlayMate mobile application and related services.
+      </p>
+
+      <div class="meta">
+        <span>
+          <span class="meta-dot"></span>
+          Effective date: October 3, 2026
+        </span>
+
+        <span>
+          <span class="meta-dot"></span>
+          Last updated: October 3, 2026
+        </span>
+      </div>
+    </header>
+
+    <div class="content">
+
+      <nav class="toc" aria-label="Table of contents">
+        <div class="toc-title">Contents</div>
+
+        <ol>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#information">Information We Handle</a></li>
+          <li><a href="#local-data">Data Stored on Your Device</a></li>
+          <li><a href="#analytics">Analytics and Diagnostics</a></li>
+          <li><a href="#firebase">Firebase and Third-Party Services</a></li>
+          <li><a href="#permissions">Device Permissions</a></li>
+          <li><a href="#use">How Information Is Used</a></li>
+          <li><a href="#sharing">Data Sharing</a></li>
+          <li><a href="#retention">Data Retention and Deletion</a></li>
+          <li><a href="#security">Security</a></li>
+          <li><a href="#children">Children's Privacy</a></li>
+          <li><a href="#third-party">Third-Party Links and Services</a></li>
+          <li><a href="#changes">Changes to This Policy</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ol>
+      </nav>
+
+      <section id="introduction">
+        <h2>1. Introduction</h2>
+
+        <p>
+          PlayMate is an offline gaming companion application developed
+          by <strong>Sundram Gupta</strong> under the developer identity
+          <strong>Sundramdotdev</strong>.
+        </p>
+
+        <p>
+          PlayMate provides gaming utilities such as dice rolling,
+          coin tossing, team generation, score tracking, cricket
+          scoring, spin wheels, tournament tools, timers, match
+          history, statistics, and other related utilities.
+        </p>
+
+        <p>
+          We respect your privacy and aim to collect and use only the
+          information reasonably necessary to operate, maintain,
+          secure, and improve the application.
+        </p>
+
+        <div class="notice">
+          <p>
+            <strong>Privacy by design:</strong>
+            Many PlayMate features are designed to work locally on your
+            device. Information that remains entirely on your device is
+            not transmitted to us merely because you use the feature.
+          </p>
+        </div>
+      </section>
+
+      <section id="information">
+        <h2>2. Information We Handle</h2>
+
+        <p>
+          Depending on the version of PlayMate you use and the features
+          enabled in that version, the application may handle the
+          following categories of information.
+        </p>
+
+        <div class="data-table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Examples</th>
+                <th>Purpose</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>App usage information</td>
+                <td>
+                  Feature interactions, app version, device or
+                  installation information
+                </td>
+                <td>
+                  App operation, analytics, diagnostics, and
+                  improvement
+                </td>
+              </tr>
+
+              <tr>
+                <td>Diagnostics</td>
+                <td>
+                  Crash information and technical diagnostic data
+                </td>
+                <td>
+                  Identifying crashes, bugs, and reliability issues
+                </td>
+              </tr>
+
+              <tr>
+                <td>Locally created game data</td>
+                <td>
+                  Scores, player names, match history, statistics,
+                  settings, and other information entered into
+                  PlayMate
+                </td>
+                <td>
+                  Providing the requested gaming functionality
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p>
+          The exact information handled may change as PlayMate evolves.
+          This policy will be updated when material changes are made to
+          the application's data practices.
+        </p>
+      </section>
+
+      <section id="local-data">
+        <h2>3. Data Stored on Your Device</h2>
+
+        <p>
+          PlayMate is designed with offline functionality in mind.
+          Information created while using local features may be stored
+          directly on your device.
+        </p>
+
+        <p>
+          Examples may include:
+        </p>
+
+        <ul>
+          <li>Game scores and match results.</li>
+          <li>Player names entered by you.</li>
+          <li>Match history.</li>
+          <li>Player statistics.</li>
+          <li>Application preferences and settings.</li>
+          <li>Other locally generated game information.</li>
+        </ul>
+
+        <p>
+          Locally stored information is controlled by the application
+          and remains on your device unless a feature explicitly
+          transmits it to an external service.
+        </p>
+
+        <p>
+          Removing the application may remove locally stored
+          application data, depending on your device's operating system
+          and backup settings.
+        </p>
+      </section>
+
+      <section id="analytics">
+        <h2>4. Analytics and Diagnostics</h2>
+
+        <p>
+          Where analytics or crash-reporting services are enabled in
+          your version of PlayMate, these services may receive technical
+          and usage information to help us understand application
+          performance and improve reliability.
+        </p>
+
+        <p>
+          This information may include items such as:
+        </p>
+
+        <ul>
+          <li>Application version and build information.</li>
+          <li>Operating system and device information.</li>
+          <li>Crash reports and diagnostic information.</li>
+          <li>General feature or interaction information.</li>
+          <li>Technical information required to identify application errors.</li>
+        </ul>
+
+        <p>
+          Analytics and diagnostic information is used for purposes such
+          as understanding feature usage, identifying bugs, improving
+          stability, monitoring performance, and maintaining the
+          application.
+        </p>
+
+        <div class="notice">
+          <p>
+            <strong>Important:</strong>
+            The specific analytics and diagnostics configuration can
+            change between releases. The disclosures in this policy
+            should always be reviewed together with the current
+            PlayMate release and its Google Play Data Safety
+            declaration.
+          </p>
+        </div>
+      </section>
+
+      <section id="firebase">
+        <h2>5. Firebase and Third-Party Services</h2>
+
+        <p>
+          PlayMate may use services provided by Google Firebase or other
+          third-party service providers for application infrastructure,
+          analytics, crash diagnostics, configuration, authentication,
+          or other functionality when those services are enabled.
+        </p>
+
+        <p>
+          Depending on the features enabled in a particular release,
+          relevant Firebase services may include:
+        </p>
+
+        <ul>
+          <li>Firebase Analytics.</li>
+          <li>Firebase Crashlytics.</li>
+          <li>Firebase Remote Config.</li>
+          <li>Firebase Authentication.</li>
+          <li>Firebase Cloud Firestore.</li>
+          <li>Firebase Cloud Messaging.</li>
+        </ul>
+
+        <p>
+          Not every service listed above is necessarily active in every
+          version of PlayMate. Services are only used when required by
+          the functionality implemented in the relevant release.
+        </p>
+
+        <p>
+          Third-party providers process information according to their
+          own privacy policies and terms. You can review Google's
+          privacy practices through the official
+          <a
+            href="https://policies.google.com/privacy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Google Privacy Policy
+          </a>.
+        </p>
+      </section>
+
+      <section id="permissions">
+        <h2>6. Device Permissions</h2>
+
+        <p>
+          PlayMate is designed to request only permissions that are
+          necessary for implemented functionality.
+        </p>
+
+        <p>
+          Depending on the features included in a particular release,
+          the application may use standard Android or iOS capabilities
+          such as network access, notifications, or vibration/haptic
+          feedback.
+        </p>
+
+        <p>
+          PlayMate does not intentionally request access to contacts,
+          microphone, camera, precise location, or other sensitive
+          device information unless a future feature specifically
+          requires it and the appropriate disclosure and permission
+          process is implemented.
+        </p>
+      </section>
+
+      <section id="use">
+        <h2>7. How Information Is Used</h2>
+
+        <p>
+          Information handled by PlayMate may be used for the following
+          purposes:
+        </p>
+
+        <ul>
+          <li>To provide and operate PlayMate's features.</li>
+          <li>To save your locally created gaming information.</li>
+          <li>To maintain application functionality.</li>
+          <li>To diagnose crashes and technical problems.</li>
+          <li>To understand general application usage.</li>
+          <li>To improve application performance and reliability.</li>
+          <li>To protect the application against abuse or misuse.</li>
+          <li>To comply with applicable legal obligations.</li>
+        </ul>
+
+        <p>
+          We do not use personal information for purposes unrelated to
+          the operation or improvement of PlayMate unless the purpose is
+          disclosed to you or required by applicable law.
+        </p>
+      </section>
+
+      <section id="sharing">
+        <h2>8. Data Sharing</h2>
+
+        <p>
+          We do not sell your personal information.
+        </p>
+
+        <p>
+          Information may be processed by third-party service providers
+          when those providers are required to operate specific PlayMate
+          functionality, provide analytics or diagnostics, deliver
+          infrastructure services, or comply with legal requirements.
+        </p>
+
+        <p>
+          We may also disclose information where reasonably necessary
+          to:
+        </p>
+
+        <ul>
+          <li>Comply with applicable law or legal process.</li>
+          <li>Protect the rights, safety, and security of users.</li>
+          <li>Detect, prevent, or investigate abuse or security issues.</li>
+          <li>Protect the security and integrity of PlayMate.</li>
+        </ul>
+
+        <p>
+          Information that remains solely on your device is not shared
+          with us unless you explicitly use a feature that transmits
+          that information.
+        </p>
+      </section>
+
+      <section id="retention">
+        <h2>9. Data Retention and Deletion</h2>
+
+        <h3>Local information</h3>
+
+        <p>
+          Information stored locally by PlayMate generally remains on
+          your device until you delete it through the application,
+          clear the application's data, or uninstall the application,
+          subject to your device's operating system and backup behavior.
+        </p>
+
+        <h3>Service-related information</h3>
+
+        <p>
+          Information processed by third-party services may be retained
+          according to the applicable service provider's retention
+          practices and our legitimate operational requirements.
+        </p>
+
+        <h3>Deletion requests</h3>
+
+        <p>
+          If a future PlayMate feature provides an account or server-side
+          data storage, PlayMate will provide an appropriate mechanism
+          for users to request deletion of eligible account-associated
+          information.
+        </p>
+
+        <p>
+          For privacy-related deletion questions, you may contact the
+          developer using the contact information provided below.
+        </p>
+      </section>
+
+      <section id="security">
+        <h2>10. Security</h2>
+
+        <p>
+          We take reasonable measures intended to protect information
+          handled by PlayMate against unauthorized access, alteration,
+          disclosure, or destruction.
+        </p>
+
+        <p>
+          Security measures may include limiting data collection,
+          keeping dependencies and services updated, using secure
+          communication channels where applicable, and restricting
+          access to information to legitimate operational purposes.
+        </p>
+
+        <p>
+          However, no method of electronic storage or transmission can
+          be guaranteed to be completely secure. We therefore cannot
+          guarantee absolute security.
+        </p>
+      </section>
+
+      <section id="children">
+        <h2>11. Children's Privacy</h2>
+
+        <p>
+          PlayMate is a general-purpose gaming utility application and
+          is not specifically directed toward children under the age
+          required by applicable law.
+        </p>
+
+        <p>
+          We do not knowingly collect personal information from children
+          in violation of applicable privacy laws.
+        </p>
+
+        <p>
+          If you believe that a child has provided personal information
+          through PlayMate in a manner that requires deletion, please
+          contact us so that the matter can be reviewed.
+        </p>
+      </section>
+
+      <section id="third-party">
+        <h2>12. Third-Party Links and Services</h2>
+
+        <p>
+          PlayMate may contain links to third-party websites or services,
+          for example developer pages, documentation, or external
+          resources.
+        </p>
+
+        <p>
+          Once you leave PlayMate and access a third-party service, that
+          service's own privacy policy and terms apply. We are not
+          responsible for the privacy practices or content of
+          third-party websites and services.
+        </p>
+      </section>
+
+      <section id="changes">
+        <h2>13. Changes to This Privacy Policy</h2>
+
+        <p>
+          We may update this Privacy Policy from time to time to reflect
+          changes to PlayMate, its features, applicable laws, or the
+          services used by the application.
+        </p>
+
+        <p>
+          When changes are made, the "Last updated" date at the top of
+          this page will be updated.
+        </p>
+
+        <p>
+          Continued use of PlayMate after an updated Privacy Policy
+          becomes available means that you acknowledge the updated
+          policy, to the extent permitted by applicable law.
+        </p>
+      </section>
+
+      <section id="contact">
+        <h2>14. Contact</h2>
+
+        <p>
+          If you have questions, concerns, or requests regarding this
+          Privacy Policy or PlayMate's privacy practices, please contact
+          the developer.
+        </p>
+
+        <div class="contact-card">
+          <p>
+            <strong>Developer:</strong>
+            Sundram Gupta
+          </p>
+
+          <p>
+            <strong>Developer identity:</strong>
+            Sundramdotdev
+          </p>
+
+          <p>
+            <strong>GitHub:</strong>
+            <a
+              href="https://github.com/sundramdotdev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              github.com/sundramdotdev
+            </a>
+          </p>
+
+          <p>
+            <strong>LinkedIn:</strong>
+            <a
+              href="https://linkedin.com/in/sundramdotdev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              linkedin.com/in/sundramdotdev
+            </a>
+          </p>
+
+          <p>
+            <strong>Instagram:</strong>
+            <a
+              href="https://www.instagram.com/devsundram_/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @devsundram_
+            </a>
+          </p>
+        </div>
+
+        <p style="margin-top: 20px;">
+          For privacy-related requests, please clearly mention
+          <strong>PlayMate Privacy</strong> in your message.
+        </p>
+      </section>
+
+    </div>
+
+    <footer class="footer">
+      <p>
+        © 2026 Sundram Gupta. All rights reserved.
+      </p>
+
+      <p>
+        PlayMate — Offline Gaming Companion
+      </p>
+
+      <div class="footer-links">
+        <a
+          href="https://github.com/sundramdotdev"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+
+        <a
+          href="https://linkedin.com/in/sundramdotdev"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+
+        <a
+          href="https://www.instagram.com/devsundram_/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram
+        </a>
+      </div>
+    </footer>
+
+  </main>
+</body>
+</html>
+```
