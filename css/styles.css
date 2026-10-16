@@ -543,6 +543,181 @@ a:hover {
 }
 
 /* -------------------------------------------------------------
+   Download Releases Section
+   ------------------------------------------------------------- */
+.download-section {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.download-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+  max-width: 900px;
+  margin-inline: auto;
+  margin-bottom: 32px;
+}
+
+.download-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 34px 28px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.download-card:hover {
+  border-color: rgba(193, 138, 66, 0.45);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+}
+
+.download-card.featured {
+  border-color: var(--accent);
+  background: linear-gradient(180deg, rgba(193, 138, 66, 0.05) 0%, var(--bg) 100%);
+}
+
+.download-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.download-badge {
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  background: var(--accent-subtle);
+  border: 1px solid rgba(193, 138, 66, 0.3);
+  color: var(--accent);
+}
+
+.download-badge.store {
+  background: var(--surface-2);
+  border-color: var(--border);
+  color: var(--text-secondary);
+}
+
+.download-icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+}
+
+.download-icon-wrap svg {
+  width: 22px;
+  height: 22px;
+}
+
+.download-card-title {
+  margin: 0 0 10px;
+  font-size: 21px;
+  font-weight: 750;
+  letter-spacing: -0.015em;
+  color: var(--text);
+}
+
+.download-card-desc {
+  margin: 0 0 20px;
+  font-size: 14.5px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.download-meta-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px 0;
+  border-top: 1px solid var(--border-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+  margin-bottom: 24px;
+}
+
+.download-meta-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13.5px;
+}
+
+.meta-label {
+  color: var(--text-muted);
+}
+
+.meta-value {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.meta-value.font-mono {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+}
+
+.download-btn {
+  width: 100%;
+  padding: 14px 20px;
+  font-size: 15px;
+  margin-top: auto;
+}
+
+.download-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+.download-note {
+  max-width: 900px;
+  margin-inline: auto;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 20px 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.download-note-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--accent);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.download-note-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.download-note-text {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.download-note-text strong {
+  color: var(--text);
+}
+
+/* -------------------------------------------------------------
    Features Grid
    ------------------------------------------------------------- */
 .features-grid {

@@ -30,6 +30,9 @@ playmate-privacy-policy/
 │
 ├── 404.html                     # Branded GitHub Pages 404 error page
 │
+├── latest-releases/
+│   └── PlayMate-v1.1.0.apk      # Standalone APK release for direct install
+│
 ├── assets/
 │   ├── logo/
 │   │   ├── playmate-logo.png    # Official PlayMate app logo (512 × 512 px)

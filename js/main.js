@@ -9,17 +9,16 @@
   'use strict';
 
   /**
-   * APP STORE CONFIGURATION PLACEHOLDER
-   * When PlayMate is officially released on the Google Play Store or Apple App Store,
-   * paste the official public store URL below.
-   * If left empty, CTA buttons safely scroll to the features section or open privacy policy.
+   * APP RELEASES & STORE CONFIGURATION
    */
-  const STORE_URL = ""; // e.g. "https://play.google.com/store/apps/details?id=com.sundramdotdev.playmate"
+  const STORE_URL = "https://apkpure.net/playmate/com.sundramdotdev.playmate";
+  const DIRECT_APK_URL = "latest-releases/PlayMate-v1.1.0.apk";
 
-  // Expose store url configuration to window if needed
+  // Expose configuration to window if needed
   window.PLAYMATE_CONFIG = {
     storeUrl: STORE_URL,
-    version: "1.0.0"
+    directApkUrl: DIRECT_APK_URL,
+    version: "1.1.0"
   };
 
   document.addEventListener('DOMContentLoaded', function () {
