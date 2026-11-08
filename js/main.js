@@ -12,7 +12,7 @@
    * APP RELEASES & STORE CONFIGURATION
    */
   const STORE_URL = "https://apkpure.net/playmate/com.sundramdotdev.playmate";
-  const DIRECT_APK_URL = "latest-releases/PlayMate-v1.1.0.apk";
+  const DIRECT_APK_URL = "latest-releases/PlayMate-v1.0.2.apk";
 
   // Expose configuration to window if needed
   window.PLAYMATE_CONFIG = {
